@@ -39,7 +39,7 @@ ul {
   border: none;
   @include responsive(phone) {
     right: 3rem;
-    bottom: 6rem;
+    bottom: 8rem;
   }
   @include responsive(big-desktop) {
     right: 3rem;
