@@ -1,0 +1,128 @@
+/*==================Header====================*/
+#home {
+  background-color: $color-primary;
+  background: linear-gradient(to bottom, #d90647 37%, #eb402c 98%);
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 50px;
+  position: relative;
+  @include responsive(phone) {
+    padding: 10px;
+    text-align: center;
+  }
+  @include responsive(tablet) {
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+  }
+}
+
+#hero {
+  margin: 10rem 0;
+  color: $color-white;
+  @include responsive(phone) {
+    margin: 4rem 0;
+  }
+  .hero__description {
+    margin-top: 5rem;
+    margin-left: 3rem;
+    @include responsive(phone) {
+      margin-left: 0;
+    }
+  }
+
+  .hero-image {
+    max-width: 28% !important;
+    float: right;
+    z-index: 5;
+    position: absolute;
+    @include responsive(tab-land) {
+      max-width: 30% !important;
+      margin-left: 3rem;
+    }
+    @include responsive(phone) {
+      max-width: 30% !important;
+      margin: 0 auto;
+    }
+    @include responsive(tab-port) {
+      max-width: 35% !important;
+      margin-left: 1rem;
+    }
+    @include responsive(tablet) {
+      display: none;
+    }
+  }
+}
+
+.shape {
+  &__custom {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    svg {
+      position: relative;
+      display: block;
+      width: calc(100% + 1.3px);
+      height: 150px;
+      transform: rotateY(180deg);
+      z-index: -1;
+      fill: invert($color: #000000);
+      @include responsive(phone) {
+        height: 50px;
+      }
+      @include responsive(tablet) {
+        height: 80px;
+      }
+    }
+  }
+}
+
+#scrollUp {
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background: #d90647; /* Old browsers */
+  background: -moz-linear-gradient(
+    top,
+    #d90647 37%,
+    #eb402c 98%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    #d90647 37%,
+    #eb402c 98%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #d90647 37%,
+    #eb402c 98%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d90647', endColorstr='#eb402c',GradientType=0 ); /* IE6-9 */
+  background-repeat: no-repeat;
+  color: #ffffff; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Rounded corners */
+  font-size: 2rem; /* Increase font size */
+  box-shadow: 0 10px 30px rgba(54, 54, 54, 0.3);
+  @include responsive(phone) {
+    width: 30px;
+    height: 30px;
+    font-size: 0.2rem;
+  }
+}
+
+#scrollUp:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+/*==================Show Mobile Menu====================*/

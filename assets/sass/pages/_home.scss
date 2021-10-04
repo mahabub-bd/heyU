@@ -1,0 +1,290 @@
+section {
+  padding: 50px;
+  margin: 0 auto;
+}
+
+/* ================ Features ====================*/
+#features {
+  height: 100%;
+  margin-top: 3rem;
+  &:not(last-child) {
+    padding-bottom: 10rem;
+  }
+  border-bottom: 1px solid $border-color;
+  @include responsive(phone) {
+    padding-bottom: 3rem;
+  }
+  @include responsive(tab-port) {
+    padding: 2rem;
+  }
+
+  .features__description {
+    margin-top: 18rem;
+    @include responsive(phone) {
+      margin-top: 2rem;
+    }
+    @include responsive(tablet) {
+      margin-top: 3rem;
+    }
+  }
+}
+/* ================ Tesimonial ====================*/
+#tesimonial {
+  .row {
+    margin-top: 10rem;
+  }
+
+  .client {
+    background-color: #fff;
+    border: 1px solid #dfdfdf;
+    padding: 2rem 3rem;
+    position: relative;
+    transition: 0.3s;
+    &:hover {
+      border: 1px solid transparent;
+      cursor: pointer;
+      transform: translateY(-20px);
+      transition: 0.3s;
+      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
+    }
+    &::after {
+      display: block;
+      position: absolute;
+      content: "";
+      top: 100%;
+      left: 5%;
+      transform: translate(50%, -50%) rotate(45deg) translateZ(0);
+      height: 15px;
+      width: 15px;
+      background: linear-gradient(-45deg, #fff 52%, transparent 0);
+      border: inherit;
+      border-width: 0 1px 1px 0;
+      border-radius: 0 0 2px 0;
+    }
+    &__message {
+      margin-bottom: 2rem;
+      font-style: italic;
+      line-height: 1.5;
+      font-size: 1.5rem;
+    }
+    &__name {
+      background: linear-gradient(to bottom, #d90647 10%, #eb402c 100%);
+      background-clip: border-box;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 700;
+    }
+
+    &__info {
+      margin-top: 1.875rem;
+      display: flex;
+      flex-flow: row;
+      justify-content: start;
+      align-items: center;
+      &--image {
+        border-radius: 50%;
+        width: 60px;
+        margin-right: 20px;
+      }
+      &--name {
+        h4 {
+          line-height: 1.5 !important;
+        }
+        .role {
+          font-size: 1.6rem;
+          line-height: 1;
+        }
+      }
+    }
+  }
+}
+/* ========================= How to ============================= */
+#howto {
+  background: linear-gradient(to bottom, #d90647 37%, #eb402c 98%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d90647', endColorstr='#eb402c',GradientType=0 );
+  background-repeat: no-repeat;
+  color: $color-white;
+  margin-bottom: 8rem;
+  margin-top: 16rem;
+  padding: 5rem 0;
+  position: relative;
+  width: 100%;
+  height: 42.2rem;
+
+  @include responsive(tab-land) {
+    height: 100%;
+    margin-bottom: 8rem;
+    margin-top: 16rem;
+    padding: 5rem 0;
+    position: relative;
+    width: 100%;
+  }
+  @include responsive(tab-port) {
+    margin: 0 auto;
+  }
+  @include responsive(phone) {
+    margin: 2rem auto 4rem;
+  }
+  .item-1 {
+    text-align: right;
+    @include responsive(tablet) {
+      margin-left: 0;
+    }
+  }
+
+  .item-2 {
+    margin: 0 auto;
+    &__image {
+      max-width: 350px;
+      margin-top: -135px;
+      text-align: center;
+
+      @include responsive(tab-land) {
+        display: block;
+        position: static;
+        height: auto;
+        width: 100% !important;
+        margin: 0 auto;
+        margin-top: 0px;
+      }
+    }
+  }
+  .firstitem,
+  .lastitem {
+    display: flex;
+    align-items: flex-start;
+    margin: 2rem 0;
+    color: $color-white;
+    @include responsive(tab-land) {
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__icon {
+      transition: 0.3s;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  .lastitem {
+    @include responsive(tab-land) {
+      max-width: 100%;
+      margin: 0 auto;
+      display: flex;
+      flex-flow: column;
+      text-align: center;
+      flex-direction: column;
+      padding-right: 1rem;
+      &:not(:last-child) {
+        padding-bottom: 2rem;
+      }
+    }
+    &__icon {
+      margin-right: 40px;
+      @include responsive(tab-land) {
+        margin: 1rem auto;
+      }
+    }
+  }
+  .firstitem {
+    @include responsive(tab-land) {
+      max-width: 100%;
+      margin: 0 auto;
+      display: flex;
+      flex-flow: column;
+      text-align: center;
+      flex-direction: column-reverse;
+      padding-left: 1rem;
+      &:not(:last-child) {
+        padding-bottom: 2rem;
+      }
+    }
+    &__icon {
+      margin-left: 40px;
+      @include responsive(tab-land) {
+        margin: 1rem auto;
+      }
+    }
+  }
+
+  .item-3 {
+    text-align: left;
+    margin-left: auto;
+  }
+}
+
+/* =================== Subscribe ===================== */
+#subscribe {
+  padding: 10rem 0;
+  text-align: center;
+  border-bottom: 1px solid $border-color;
+  @include responsive(tablet) {
+    padding: 8rem 0;
+  }
+  @include responsive(phone) {
+    padding: 8rem 0;
+  }
+}
+
+#download {
+  .logo {
+    padding: 3rem 0;
+    @include responsive(tablet) {
+      width: 30%;
+      height: 30%;
+    }
+  }
+
+  .col-1-of-2 {
+    &:not(last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+  p {
+    padding: 2rem 0;
+  }
+
+  text-align: center;
+  .appstore {
+    text-align: right;
+    @include responsive(tablet) {
+      text-align: center;
+      transform: scale(1.3);
+      &:not(:last-child) {
+        padding-bottom: 4rem;
+      }
+    }
+    @include responsive(phone) {
+      text-align: center;
+      transform: scale(1.1);
+      &:not(:last-child) {
+        padding-bottom: 4rem;
+      }
+    }
+    @include responsive(big-desktop) {
+      transform: scale(1.4);
+      margin-right: 10rem;
+    }
+  }
+
+  .playstore {
+    text-align: left;
+    @include responsive(tablet) {
+      text-align: center;
+      transform: scale(1.3);
+    }
+    @include responsive(phone) {
+      text-align: center;
+      transform: scale(1.1);
+      &:not(:last-child) {
+        padding-top: 2rem;
+      }
+    }
+    @include responsive(big-desktop) {
+      transform: scale(1.4);
+      margin-left: 10rem;
+    }
+  }
+}

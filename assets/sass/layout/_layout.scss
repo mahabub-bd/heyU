@@ -1,0 +1,11 @@
+// =============== Reusable css classes ================== //
+
+.red-dot {
+  background: linear-gradient(to bottom, #d90647 10%, #eb402c 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.text-center {
+  text-align: center;
+}

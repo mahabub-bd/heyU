@@ -1,0 +1,35 @@
+.subscribe__form {
+  margin-top: 3.2rem;
+  position: relative;
+  @include responsive(phone) {
+    margin-top: 1.2rem;
+  }
+  &--input {
+    border: none;
+    height: 5rem;
+    outline: none;
+    width: 40%;
+    @include responsive(tablet) {
+      width: 60%;
+    }
+    @include responsive(phone) {
+      width: 60%;
+    }
+    background-color: $bg-form;
+    border-radius: 5rem;
+
+    font-size: 1.6rem;
+    padding: 0 4rem;
+  }
+
+  ::placeholder {
+    padding: 0 2rem;
+  }
+  &--submit {
+    position: static;
+    margin-left: 0;
+    margin-top: 2rem;
+    margin-left: -3rem;
+    font-size: 1.6rem;
+  }
+}

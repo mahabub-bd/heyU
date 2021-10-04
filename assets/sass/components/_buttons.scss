@@ -1,0 +1,42 @@
+/* ================Buttons===================*/
+
+.btn {
+  border-radius: 5rem;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+  display: inline-block;
+}
+
+.btn-hero {
+  background: $color-white;
+  padding: 1.5rem 4rem;
+  color: #363636;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &__download {
+    background: linear-gradient(to bottom, #d90647 10%, #eb402c 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.btn-submit {
+  background: linear-gradient(to bottom, #d90647 10%, #eb402c 100%);
+  border: none;
+  box-shadow: 0 10px 30px rgba(223, 27, 60, 0.3);
+
+  color: $color-white;
+  outline: none;
+  padding: 1.5rem 6rem;
+  @include responsive(phone) {
+    padding: 1.5rem 3rem;
+  }
+}

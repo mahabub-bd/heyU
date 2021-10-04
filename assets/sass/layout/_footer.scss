@@ -1,0 +1,66 @@
+footer {
+  color: $footer-text-color;
+  position: relative;
+  padding-bottom: 10rem;
+  padding-top: 5rem;
+  border-top: 1px solid $border-color;
+  @include responsive(tablet) {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.footer__nav__item {
+  display: inline-block;
+  margin: 1rem 1rem 1rem 2rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+
+  a {
+    color: $footer-text-color;
+    text-transform: uppercase;
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}
+ul {
+  @include responsive(tab-port) {
+    margin-left: 4rem;
+  }
+}
+.language__option {
+  position: absolute;
+  right: 10rem;
+  bottom: 10.5rem;
+  outline: none;
+  border: none;
+  @include responsive(phone) {
+    right: 3rem;
+    bottom: 6rem;
+  }
+  @include responsive(big-desktop) {
+    right: 3rem;
+    bottom: 10rem;
+  }
+
+  select {
+    font-size: 1.4rem;
+    min-width: 143px;
+    padding: 0.5rem 3.5rem;
+    color: #606060;
+    border: none;
+    background-color: #f8f8f8;
+    border-radius: 5rem;
+    &:focus {
+      outline: none;
+    }
+    @include responsive(phone) {
+      min-width: 100px;
+      font-size: 1.2rem;
+      padding: 0.5rem 3rem;
+    }
+  }
+}

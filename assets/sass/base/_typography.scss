@@ -1,0 +1,70 @@
+body {
+  font-family: $default-font;
+  font-size: 2rem;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 7.2rem;
+  font-weight: $font-bold;
+
+  letter-spacing: 2px;
+  @include responsive(tab-land) {
+    font-size: 5.5rem;
+  }
+  @include responsive(phone) {
+    font-size: 6rem;
+  }
+  @include responsive(big-desktop) {
+    font-size: 6.5rem;
+  }
+  @include animation(moveInLeft, 1.5s, ease-out);
+}
+p {
+  line-height: 2;
+
+  color: #808080;
+  @include responsive(tab-land) {
+    font-size: 1.5rem;
+  }
+}
+.hero__description p {
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 8rem;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+.heading__primary {
+  font-size: 5rem;
+  font-weight: 900;
+  @include responsive(phone) {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+}
+.features__detail {
+  margin-top: 3rem;
+  font-size: 1.8rem;
+  width: 100%;
+}
+.heading__secondary {
+  font-size: 2.4rem;
+  font-weight: 900;
+  @include responsive(tablet) {
+    font-size: 2.2rem;
+    font-weight: 900;
+  }
+}
+
+.howto__paragraph {
+  color: $color-white;
+  font-size: 1.6rem !important;
+  line-height: 1.75;
+}
+.subscribe__paragraph {
+  margin-top: 3rem;
+  font-size: 1.6rem !important;
+  line-height: 1.75;
+}
