@@ -50,13 +50,13 @@
     user-select: none;
     font-size: 4rem;
     svg {
-      width: 60px;
-      height: 60px;
+      width: 6rem;
+      height: 6rem;
     }
     @include responsive(phone) {
       svg {
-        width: 45px;
-        height: 45px;
+        width: 4.5rem;
+        height: 4.5rem;
       }
     }
     @include responsive(tab-land) {
@@ -117,7 +117,10 @@
   z-index: 500;
   box-shadow: 0 10px 30px #e6e6e6;
   color: #d90647 !important;
-  padding: 10px 40px;
+  padding: 1rem 4rem;
+  @include responsive(tablet) {
+    padding: 2rem 4rem;
+  }
   transition: 0.3s;
   a {
     color: #d90647;
