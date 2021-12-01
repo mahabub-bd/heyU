@@ -5,6 +5,13 @@
   text-align: center;
   transition: 0.3s ease-in-out;
   display: inline-block;
+
+  &__download {
+    background: linear-gradient(to bottom, #d90647 10%, #eb402c 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
 .btn-hero {
@@ -18,13 +25,6 @@
 
   &:hover {
     transform: scale(1.05);
-  }
-
-  &__download {
-    background: linear-gradient(to bottom, #d90647 10%, #eb402c 100%);
-    background-clip: border-box;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
 }
 
